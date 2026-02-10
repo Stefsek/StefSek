@@ -82,4 +82,5 @@ Collection of Model Context Protocol (MCP) servers that enhance AI coding assist
 
 ## Currently Implementing
 
-- **RAG pipeline** using vector database, LangGraph, and Gemini-2.5-Flash
+- **RAG pipeline**
+- **Reflection agent**
