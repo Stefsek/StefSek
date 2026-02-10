@@ -71,12 +71,15 @@ MSc Thesis project implementing a serverless ticketing system using AWS services
 
 ---
 
-## Recent Achievements
+## Recent Projects
 
-- Successfully migrated **170M+ rows** from PostgreSQL to Amazon Redshift with zero data loss
-- Built real-time data ingestion pipeline using MongoDB triggers & AWS Lambda
-- Developed LLM-powered labeling solutions with vector search capabilities
+### [FastMCP Servers - Development Workflow Automation](https://github.com/Stefsek/my-fastmcp-servers)
+Collection of Model Context Protocol (MCP) servers that enhance AI coding assistants with specialized development tools
+- **Tech Stack:** Python 3.13.5+, FastMCP, Git, Commitlint, MCP Protocol, JSON
+- **Description:** A suite of MCP servers that extend AI coding assistants (Claude Code, Gemini CLI, GitHub Copulot) with specialized development capabilities. The Conventional Commits Server analyzes staged git changes in real-time, loads conventional commit guidelines from local markdown files, generates commit type recommendations based on code diffs, and validates messages against industry standards using commitlint integration. The Python Code Documentation Server provides comprehensive Google-style docstring guidelines for modules, classes, functions, and inline comments, enabling AI assistants to automatically generate well-documented Python code following industry best practices. Both servers use FastMCP framework for seamless integration, support stdio transport protocol for local deployment, and return structured JSON responses with error handling. The system demonstrates practical implementation of the MCP protocol for developer tool automation, reducing context switching and enforcing code quality standards directly within AI-assisted workflows.
 
-## Currently Learning
+---
 
-- **FastMCP 2.0** - Building Model Context Protocol servers with python
+## Currently Implementing
+
+- **RAG pipeline** using vector database, LangGraph, and Gemini-2.5-Flash
