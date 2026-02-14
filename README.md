@@ -7,7 +7,6 @@
   🎓 MSc Big Data Analytics (University of Derby)
   
   <a href="https://www.linkedin.com/in/stefanos-sekis/"><img src="https://skillicons.dev/icons?i=linkedin" /></a>
-  <a href="https://github.com/Stefsek"><img src="https://skillicons.dev/icons?i=github" /></a>
   
 </div>
 
@@ -83,7 +82,7 @@ LangGraph-based AI agent that generates high-quality prompts through automated s
 and refinement cycles.
 - **Tech Stack:** Python 3.13.5+, LangGraph, LangChain, Google Gemini API, Pydantic, LangSmith
 - **Description:** Description: An agentic prompt engineering system implementing the reflection pattern where AI models examine and improve their own outputs iteratively. Uses a two-node LangGraph workflow (Generation + Reflection) with structured Pydantic outputs, comprehensive token tracking, and LangSmith observability. Each iteration incorporates feedback to progressively refine prompts, addressing edge cases, safety, and user experience. Demonstrated with a Wi-Fi troubleshooting chatbot that evolved from basic framework to production-ready prompt across 4 iterations. Ideal for technical documentation, customer support automation,requirements analysis, and complex content generation where quality matters more than speed.
-   
+
 ---
 
 ## Currently Implementing
