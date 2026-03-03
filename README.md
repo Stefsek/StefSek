@@ -73,9 +73,9 @@ MSc Thesis project implementing a serverless ticketing system using AWS services
 ## Recent Projects
 
 ### [Weather App - Real-Time City Weather with Interactive Map](https://github.com/yourusername/weather-app)
-A clean, dark-themed weather dashboard built with Streamlit and powered by the free Open-Meteo API
+A dark-themed weather dashboard built with Streamlit and powered by the free Open-Meteo API
 - **Tech Stack:** Python 3.13, Streamlit, Open-Meteo API, Folium, UV
-- **Description:** A single-page weather application that delivers instant real-time weather data for any searched city. Users can search locations and view current conditions including temperature with °C/°F toggle, weather condition labels, humidity percentage, wind speed, and cardinal wind direction. The app fetches data through Open-Meteo's geocoding and forecast APIs (no API key required) with 5-minute response caching to optimize performance and prevent redundant API calls during Streamlit rerenders. Features a dark gradient theme with custom CSS metric cards and an interactive Folium map using CartoDB dark_matter tiles, displaying a circle marker at the searched city location. Built with modular src/ architecture organizing services, models, and utilities, implementing dataclasses with __post_init__ validation for type safety and data integrity. Developed in approximately 75 minutes following the https://github.com/gsd-build/get-shit-done workflow for Claude Code, completing 2 development phases across 5 implementation plans and shipping 571 lines of production Python code.
+- **Description:** A single-page weather dashboard that delivers real-time conditions for any searched city, including temperature with °C/°F toggle, humidity, wind speed, and cardinal wind direction. Uses Open-Meteo's geocoding and forecast APIs (no API key required) with response caching to reduce redundant calls. Features an interactive Folium map and a modular src/ architecture separating services, models, and utilities.
 
 ### [ReflectionAgent - Iterative Prompt Engineering with Self-Critique](https://github.com/Stefsek/reflection-agent)
 LangGraph-based AI agent that generates high-quality prompts through automated self-critique 
