@@ -75,7 +75,7 @@ MSc Thesis project implementing a serverless ticketing system using AWS services
 ### [Weather App - Real-Time City Weather with Interactive Map](https://github.com/yourusername/weather-app)
 A dark-themed weather dashboard built with Streamlit and powered by the free Open-Meteo API
 - **Tech Stack:** Python 3.13, Streamlit, Open-Meteo API, Folium, UV
-- **Description:** A single-page weather dashboard that delivers real-time conditions for any searched city, including temperature with °C/°F toggle, humidity, wind speed, and wind direction. Uses Open-Meteo's geocoding and forecast APIs (no API key required) with response caching to reduce redundant calls. Features an interactive Folium map and a modular architecture separating services, models, and utilities.
+- **Description:** A single-page weather dashboard that delivers real-time conditions for any searched city, including temperature with °C/°F toggle, humidity, wind speed, and wind direction. Uses Open-Meteo's geocoding and forecast APIs with response caching to reduce redundant calls. Features an interactive Folium map and a modular architecture separating services, models, and utilities.
 
 ### [ReflectionAgent - Iterative Prompt Engineering with Self-Critique](https://github.com/Stefsek/reflection-agent)
 LangGraph-based AI agent that generates high-quality prompts through automated self-critique 
