@@ -28,7 +28,7 @@ $ ./identify --target stefsek
 ## `> cat /home/stefsek/about_me.md`
 
 ```markdown
-# Hi, I'm Stefanos Sekis 👋
+# Hi, I'm Stefanos Sekis
 
 I'm a Data Engineer with hands-on experience building scalable
 data pipelines and cloud-native solutions. I have architected
@@ -111,17 +111,6 @@ stefsek@matrix:~$ cat frameworks_and_tools/*
 `▸ stack`       → Python 3.13.5+ · LangGraph · LangChain · Google Gemini API · Pydantic · LangSmith
 
 `▸ description` → An agentic prompt engineering system implementing the reflection pattern where AI models examine and improve their own outputs iteratively. Uses a two-node LangGraph workflow (Generation + Reflection) with structured Pydantic outputs, comprehensive token tracking, and LangSmith observability. Each iteration incorporates feedback to progressively refine prompts, addressing edge cases, safety, and user experience. Demonstrated with a Wi-Fi troubleshooting chatbot that evolved from basic framework to production-ready prompt across 4 iterations. Ideal for technical documentation, customer support automation, requirements analysis, and complex content generation where quality matters more than speed.
-
----
-
-## `> cat ~/projects/in_progress.md`
-
-```
-╔══════════════════════════════════════════════════════════════════════╗
-║  ▶ RAG Pipeline                                    [ IN PROGRESS ]   ║
-║    Currently implementing                                            ║
-╚══════════════════════════════════════════════════════════════════════╝
-```
 
 ---
 
