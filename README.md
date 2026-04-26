@@ -156,7 +156,7 @@ Tokens used: ~2.1k
 <div align="center">
 
   <a href="https://github.com/Stefsek">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=00FF41&center=true&vCenter=true&width=900&lines=Mr.+Anderson...;Never+send+a+human+to+do+a+machine%27s+job;You+hear+that%3F;That+is+the+sound+of+inevitability;You%27re+empty;So+are+you;If+you+can%27t+beat+us;Then+join+us;The+best+thing+about+being+me;There%27s+so+many+me%27s" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=00FF41&center=true&vCenter=true&width=900&lines=Mr.+Anderson...;Never+send+a+human+to+do+a+machine%27s+job;You+hear+that%3F;That+is+the+sound+of+inevitability;You%27re+empty;So+are+you;The+best+thing+about+being+me;There%27s+so+many+me%27s" />
   </a>
 
 </div>
