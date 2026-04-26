@@ -133,7 +133,10 @@ email    → schekies@outlook.com.gr
 
 ---
 
-```bash
-[agent] profile assembled · 7 reads · session terminated
-  "Goodbye, Mr. Anderson."
+## `● Task complete`
+
+```
+Profile assembled for user "stefsek".
+
+Tool calls: 6 Read · 1 Glob · 7 total
 ```
