@@ -8,28 +8,20 @@
 
 ---
 
-```bash
-$ ./identify --target stefsek
-[+] Establishing secure shell to host: github.com ................. OK
-[+] Bypassing firewall ............................................ OK
-[+] Decrypting profile ............................................ OK
+## `> cat ~/whoami.yaml`
 
-  ╔════════════════════════════════════════════════════════════════════╗
-  ║  NAME     : Stefanos Sekis                                         ║
-  ║  ROLE     : Data Engineering  //  AWS Cloud Architecture           ║
-  ║  FOCUS    : Real-Time Data Pipelines  //  LLM Integration          ║
-  ║  EDU      : MSc Big Data Analytics — University of Derby        ║
-  ║  STATUS   : ONLINE  ▮▮▮▮▮▮▮▮▮▮  100%                               ║
-  ╚════════════════════════════════════════════════════════════════════╝
+```yaml
+role:    Data Engineering // AWS Cloud Architecture
+focus:   Real-Time Data Pipelines // LLM Integration
+edu:     MSc Big Data Analytics — University of Derby
+status:  ONLINE ▮▮▮▮▮▮▮▮▮▮ 100%
 ```
 
 ---
 
-## `> cat /home/stefsek/about_me.md`
+## `> cat ~/about_me.md`
 
 ```markdown
-# Hi, I'm Stefanos Sekis
-
 I'm a Data Engineer with hands-on experience building scalable
 data pipelines and cloud-native solutions. I have architected
 comprehensive ETL workflows, real-time data ingestion systems,
@@ -38,98 +30,99 @@ and LLM-powered solutions using AWS services.
 
 ---
 
-## `> inspect /opt/stefsek/tech_stack/`
+## `> cat ~/stack.yaml`
 
-```bash
-stefsek@matrix:~$ ls -la /opt/stefsek/tech_stack/
-drwxr-xr-x  stefsek  staff   aws_services/
-drwxr-xr-x  stefsek  staff   infrastructure_as_code/
-drwxr-xr-x  stefsek  staff   languages/
-drwxr-xr-x  stefsek  staff   databases/
-drwxr-xr-x  stefsek  staff   frameworks_and_tools/
+```yaml
+aws_services:
+  - Lambda          - Step Functions   - Glue
+  - Kinesis         - EventBridge      - S3
+  - RDS             - ECS              - DMS
+  - DynamoDB        - Secrets Manager  - CloudWatch
+  - Bedrock
 
-stefsek@matrix:~$ cat aws_services/*
-▸ Lambda             ▸ Step Functions     ▸ Glue
-▸ Kinesis            ▸ EventBridge        ▸ S3
-▸ RDS                ▸ ECS                ▸ DMS
-▸ DynamoDB           ▸ Secrets Manager    ▸ CloudWatch
-▸ Bedrock
+infrastructure_as_code:
+  - CloudFormation  - AWS CDK
 
-stefsek@matrix:~$ cat infrastructure_as_code/*
-▸ CloudFormation     ▸ AWS CDK
+languages:
+  - Python          - SQL
 
-stefsek@matrix:~$ cat languages/*
-▸ Python             ▸ SQL
+databases:
+  - Amazon Redshift - PostgreSQL       - MongoDB      - DynamoDB
 
-stefsek@matrix:~$ cat databases/*
-▸ Amazon Redshift    ▸ PostgreSQL         ▸ MongoDB            ▸ DynamoDB
-
-stefsek@matrix:~$ cat frameworks_and_tools/*
-▸ FastAPI            ▸ LangChain          ▸ LangGraph
-▸ Streamlit          ▸ Git
+frameworks_and_tools:
+  - FastAPI         - LangChain        - LangGraph
+  - Streamlit       - Git
 ```
 
 ---
 
-## `> cat ~/projects/*.md`
+## `> tail -n +1 ~/projects/*.md`
 
 ```
-╔══════════════════════════════════════════════════════════════════════╗
-║  ▶ AWS Ticket Management System                    [ HIGHLIGHTED ]   ║
-║    MSc Thesis · serverless event-driven ticketing on AWS             ║
-╚══════════════════════════════════════════════════════════════════════╝
+==> aws-ticket-management.md <==
+status:  [ HIGHLIGHTED ]
+about:   MSc Thesis · serverless event-driven ticketing on AWS
+stack:   AWS Lambda · Kinesis · DynamoDB · Step Functions · S3 · AWS CDK · SNS · LangChain
+
+An event-driven serverless ticketing system that processes support requests in real-time.
+Incoming tickets are ingested through Kinesis Data Streams and orchestrated by Step Functions.
+Each ticket undergoes sentiment analysis with Amazon Comprehend, followed by AI-generated
+responses using Bedrock LLMs via Lambda. Ticket metadata is stored in DynamoDB for fast
+retrieval, while complete records are archived in S3. SNS handles real-time notifications,
+and AWS Glue performs ETL operations to load data into Redshift for analytics. CloudWatch
+Alarms monitor the entire pipeline for failures, ensuring reliable ticket processing.
 ```
 
-`▸ repo`        → [github.com/Stefsek/AWS-TicketManagementSystem](https://github.com/Stefsek/AWS-TicketManagementSystem)
-
-`▸ stack`       → AWS Lambda · Kinesis · DynamoDB · Step Functions · S3 · AWS CDK · SNS · LangChain
-
-`▸ description` → An event-driven serverless ticketing system that processes support requests in real-time. Incoming tickets are ingested through Kinesis Data Streams and orchestrated by Step Functions. Each ticket undergoes sentiment analysis with Amazon Comprehend, followed by AI-generated responses using Bedrock LLMs via Lambda. Ticket metadata is stored in DynamoDB for fast retrieval, while complete records are archived in S3. SNS handles real-time notifications, and AWS Glue performs ETL operations to load data into Redshift for analytics. CloudWatch Alarms monitor the entire pipeline for failures, ensuring reliable ticket processing.
+`▸ repo` → [github.com/Stefsek/AWS-TicketManagementSystem](https://github.com/Stefsek/AWS-TicketManagementSystem)
 
 ```
-╔══════════════════════════════════════════════════════════════════════╗
-║  ▶ Weather App                                         [ SHIPPED ]   ║
-║    Real-time city weather dashboard with interactive map             ║
-╚══════════════════════════════════════════════════════════════════════╝
+==> weather-app.md <==
+status:  [ SHIPPED ]
+about:   Real-time city weather dashboard with interactive map
+stack:   Python 3.13 · Streamlit · Open-Meteo API · Folium · UV
+
+A single-page weather dashboard that delivers real-time conditions for any searched city,
+including temperature with °C/°F toggle, humidity, wind speed, and wind direction. Uses
+Open-Meteo's geocoding and forecast APIs with response caching to reduce redundant calls.
+Features an interactive Folium map and a modular architecture separating services, models,
+and utilities.
 ```
 
-`▸ repo`        → [github.com/Stefsek/weatherWebApp-gsd](https://github.com/Stefsek/weatherWebApp-gsd)
-
-`▸ stack`       → Python 3.13 · Streamlit · Open-Meteo API · Folium · UV
-
-`▸ description` → A single-page weather dashboard that delivers real-time conditions for any searched city, including temperature with °C/°F toggle, humidity, wind speed, and wind direction. Uses Open-Meteo's geocoding and forecast APIs with response caching to reduce redundant calls. Features an interactive Folium map and a modular architecture separating services, models, and utilities.
+`▸ repo` → [github.com/Stefsek/weatherWebApp-gsd](https://github.com/Stefsek/weatherWebApp-gsd)
 
 ```
-╔══════════════════════════════════════════════════════════════════════╗
-║  ▶ ReflectionAgent                                     [ SHIPPED ]   ║
-║    Iterative prompt engineering with LangGraph self-critique         ║
-╚══════════════════════════════════════════════════════════════════════╝
+==> reflection-agent.md <==
+status:  [ SHIPPED ]
+about:   Iterative prompt engineering with LangGraph self-critique
+stack:   Python 3.13.5+ · LangGraph · LangChain · Google Gemini API · Pydantic · LangSmith
+
+An agentic prompt engineering system implementing the reflection pattern where AI models
+examine and improve their own outputs iteratively. Uses a two-node LangGraph workflow
+(Generation + Reflection) with structured Pydantic outputs, comprehensive token tracking,
+and LangSmith observability. Each iteration incorporates feedback to progressively refine
+prompts, addressing edge cases, safety, and user experience. Demonstrated with a Wi-Fi
+troubleshooting chatbot that evolved from basic framework to production-ready prompt across
+4 iterations.
 ```
 
-`▸ repo`        → [github.com/Stefsek/reflection-agent](https://github.com/Stefsek/reflection-agent)
-
-`▸ stack`       → Python 3.13.5+ · LangGraph · LangChain · Google Gemini API · Pydantic · LangSmith
-
-`▸ description` → An agentic prompt engineering system implementing the reflection pattern where AI models examine and improve their own outputs iteratively. Uses a two-node LangGraph workflow (Generation + Reflection) with structured Pydantic outputs, comprehensive token tracking, and LangSmith observability. Each iteration incorporates feedback to progressively refine prompts, addressing edge cases, safety, and user experience. Demonstrated with a Wi-Fi troubleshooting chatbot that evolved from basic framework to production-ready prompt across 4 iterations. Ideal for technical documentation, customer support automation, requirements analysis, and complex content generation where quality matters more than speed.
+`▸ repo` → [github.com/Stefsek/reflection-agent](https://github.com/Stefsek/reflection-agent)
 
 ---
 
-## `> connect --user stefsek`
+## `> cat ~/connect.txt`
 
-```bash
-$ ./connect.sh
-[+] Establishing secure handshake .................... OK
-[+] Authentication verified .......................... OK
-[+] Channel open. Awaiting transmission.
 ```
-
-`▸ linkedin`    → [linkedin.com/in/stefanos-sekis](https://www.linkedin.com/in/stefanos-sekis/)
+linkedin → linkedin.com/in/stefanos-sekis
+email    → schekies@outlook.com.gr
+```
 
 ---
 
+## `> exit`
+
 ```bash
-[+] Transmission complete.
-[+] Closing channel .................................. OK
+logout
+Connection to github.com closed.
 
   "Goodbye, Mr. Anderson."
 ```
