@@ -149,7 +149,8 @@ email    → schekies@outlook.com.gr
 ```
 Profile assembled for user "stefsek".
 
-Tool calls:  7 Read · 1 Glob · 1 TodoWrite · 9 total```
+Tool calls:  7 Read · 1 Glob · 1 TodoWrite · 9 total
+```
 
 <div align="center">
 
