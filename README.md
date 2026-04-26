@@ -8,18 +8,24 @@
 
 ---
 
-## `> cat ~/whoami.yaml`
+```bash
+[agent] spawned · target=stefsek
+[agent] task: profile user · scanning ~/
+```
+
+---
+
+## `● Read(~/whoami.yaml)`
 
 ```yaml
 role:    Data Engineering // AWS Cloud Architecture
 focus:   Real-Time Data Pipelines // LLM Integration
 edu:     MSc Big Data Analytics — University of Derby
-status:  ONLINE ▮▮▮▮▮▮▮▮▮▮ 100%
 ```
 
 ---
 
-## `> cat ~/about_me.md`
+## `● Read(~/about_me.md)`
 
 ```markdown
 I'm a Data Engineer with hands-on experience building scalable
@@ -30,7 +36,7 @@ and LLM-powered solutions using AWS services.
 
 ---
 
-## `> cat ~/stack.yaml`
+## `● Read(~/stack.yaml)`
 
 ```yaml
 aws_services:
@@ -56,10 +62,17 @@ frameworks_and_tools:
 
 ---
 
-## `> tail -n +1 ~/projects/*.md`
+## `● Glob(~/projects/*.md)`
 
 ```
-==> aws-ticket-management.md <==
+~/projects/aws-ticket-management.md
+~/projects/weather-app.md
+~/projects/reflection-agent.md
+```
+
+### `● Read(~/projects/aws-ticket-management.md)`
+
+```
 status:  [ HIGHLIGHTED ]
 about:   MSc Thesis · serverless event-driven ticketing on AWS
 stack:   AWS Lambda · Kinesis · DynamoDB · Step Functions · S3 · AWS CDK · SNS · LangChain
@@ -75,8 +88,9 @@ Alarms monitor the entire pipeline for failures, ensuring reliable ticket proces
 
 `▸ repo` → [github.com/Stefsek/AWS-TicketManagementSystem](https://github.com/Stefsek/AWS-TicketManagementSystem)
 
+### `● Read(~/projects/weather-app.md)`
+
 ```
-==> weather-app.md <==
 status:  [ SHIPPED ]
 about:   Real-time city weather dashboard with interactive map
 stack:   Python 3.13 · Streamlit · Open-Meteo API · Folium · UV
@@ -90,8 +104,9 @@ and utilities.
 
 `▸ repo` → [github.com/Stefsek/weatherWebApp-gsd](https://github.com/Stefsek/weatherWebApp-gsd)
 
+### `● Read(~/projects/reflection-agent.md)`
+
 ```
-==> reflection-agent.md <==
 status:  [ SHIPPED ]
 about:   Iterative prompt engineering with LangGraph self-critique
 stack:   Python 3.13.5+ · LangGraph · LangChain · Google Gemini API · Pydantic · LangSmith
@@ -109,7 +124,7 @@ troubleshooting chatbot that evolved from basic framework to production-ready pr
 
 ---
 
-## `> cat ~/connect.txt`
+## `● Read(~/connect.txt)`
 
 ```
 linkedin → linkedin.com/in/stefanos-sekis
@@ -118,11 +133,7 @@ email    → schekies@outlook.com.gr
 
 ---
 
-## `> exit`
-
 ```bash
-logout
-Connection to github.com closed.
-
+[agent] profile assembled · 7 reads · session terminated
   "Goodbye, Mr. Anderson."
 ```
